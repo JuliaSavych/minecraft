@@ -1,0 +1,64 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+img{
+  max-width: 100%;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+}
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.header__top{
+	height: 45px;
+	background: #37a14c;
+	color: #fff;
+	padding: 10px;
+}
+.social-icons{
+	display: inline-block;
+	float: right;
+}
+.social-icons a{
+	margin-right: 6px;
+}
+.header__center{
+	height: 115px;
+}
+.logo-1{
+  display: block;
+  line-height: 115px;
+  float: left;
+}
+.logo-1 img{
+  vertical-align: middle;
+}
+.contacts{
+	padding-top: 10px;
+	color: #37a14c;
+	font-size: 15px;
+	text-align: center;
+  	display: flex;
+  	justify-content: center;
+  	display: block;
+  	clear: both;
+}
+.contacts img{
+    vertical-align: middle;
+}
+[href^="tel:"]{
+  text-decoration: none;
+  white-space: nowrap;
+  color: inherit;
+}
+/*.contacts span a{
+	text-decoration: none;
+	color: inherit;
+}*/
