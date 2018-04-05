@@ -29,36 +29,60 @@ body{
 .social-icons a{
 	margin-right: 6px;
 }
+
 .header__center{
-	height: 115px;
+	padding: 10px;
 }
-.logo-1{
+.logo-1, .logo-2{
   display: block;
   line-height: 115px;
-  float: left;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
 }
-.logo-1 img{
+.logo-1, .logo-2 img{
   vertical-align: middle;
+}
+.logo-2{
+	padding-top: 10px;
 }
 .contacts{
 	padding-top: 10px;
 	color: #37a14c;
 	font-size: 15px;
-	text-align: center;
-  	display: flex;
-  	justify-content: center;
   	display: block;
-  	clear: both;
 }
-.contacts img{
+
+.skype img{
     vertical-align: middle;
+    color: #37a14c;
 }
 [href^="tel:"]{
   text-decoration: none;
   white-space: nowrap;
   color: inherit;
 }
-/*.contacts span a{
-	text-decoration: none;
-	color: inherit;
-}*/
+
+.server{
+	display: block;
+}
+
+.bottom{
+	position: relative;
+	height: 35px;
+	width: auto;
+	box-shadow: 0px 7px 2px -2px rgba(0,0,0,0.79);
+	background: #fdd108; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fdd108 0%, #fec70d 52%, #feba12 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #fdd108 0%,#fec70d 52%,#feba12 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #fdd108 0%,#fec70d 52%,#feba12 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdd108', endColorstr='#feba12',GradientType=0 ); /* IE6-9 */
+	margin-bottom:10px;
+	padding:10px 0 10px 40%;
+	text-align: center;
+}
+.bottom__text{
+	position: absolute;
+	color: #fff;
+	font-size: 12px;
+}
