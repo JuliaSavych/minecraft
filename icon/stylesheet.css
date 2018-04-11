@@ -1,0 +1,35 @@
+.icon {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.icon-vk {
+    width: 28px;
+    height: 28px;
+    background-position: -81px -5px;
+    float: right;
+    margin-right: 6px;
+}
+.icon-facebook {
+    width: 28px;
+    height: 28px;
+    background-position: -5px -5px;
+    float: right;
+    margin-right: 6px;
+}
+
+.icon-gb {
+    width: 28px;
+    height: 28px;
+    background-position: -43px -5px;
+    float: right;
+    margin-right: 6px;
+}
+
+/*.icon-skype {
+    width: 19px;
+    height: 19px;
+    background-position: -81px -5px;\
+
+}*/
+
