@@ -52,11 +52,13 @@ body{
 	color: #37a14c;
 	font-size: 15px;
   	display: inline-block;
-}
+  }
+
 .contacts__name{
 	display: block;
 }
 .contacts a{
+	vertical-align: middle;
 	display: block;
 	padding-left: 72px;
 }
@@ -137,6 +139,9 @@ background: linear-gradient(to bottom, #1e5799 0%,#46da62 0%,#3dc758 51%,#34a34b
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#34a34b',GradientType=0 ); /* IE6-9 */
 
 }
+.left-menu h2{
+	font-size: 16px;
+}
 .left-menu li a{
 	color: #ff2626;
 	text-decoration: none;
@@ -155,4 +160,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 }
 .left-menu li a:nth-child(2n+1):before{
 	background: #fff;
+
+}
+.content h1{
+	font-size: 20px;
+	font-weight: bold;
+}
+.c-text{
+	font-size: 13px;
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+.news{
+	height: 265px;
+	display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+}
+.news__text{
+	height: auto;
+	color: #fff;
+	background: #329545; /* Old browsers */
+background: -moz-linear-gradient(top, #329545 0%, #45bc5c 48%, #45bc5c 99%, #45bc5c 99%, #39a54f 100%, #45bc5c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #329545 0%,#45bc5c 48%,#45bc5c 99%,#45bc5c 99%,#39a54f 100%,#45bc5c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #329545 0%,#45bc5c 48%,#45bc5c 99%,#45bc5c 99%,#39a54f 100%,#45bc5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#329545', endColorstr='#45bc5c',GradientType=0 );
+	padding-bottom: 11px;
+}	
+.news img{
+	width: 100%;
+}
+.date{
+	padding-top: 11px;
+	color: black;
+	font-weight: bold;
+}
+.coprights{
+	font-size: 16px;
+	float: left;
 }
