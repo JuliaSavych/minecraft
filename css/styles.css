@@ -51,13 +51,19 @@ body{
 	padding-top: 10px;
 	color: #37a14c;
 	font-size: 15px;
-  	display: block;
+  	display: inline-block;
+}
+.contacts__name{
+	display: block;
+}
+.contacts a{
+	display: block;
+	padding-left: 72px;
+}
+.skype i{
+	vertical-align: middle;
 }
 
-.skype img{
-    vertical-align: middle;
-    color: #37a14c;
-}
 [href^="tel:"]{
   text-decoration: none;
   white-space: nowrap;
@@ -65,6 +71,7 @@ body{
 }
 
 .server{
+	margin-top: 5px;
 	display: block;
 }
 
@@ -129,4 +136,23 @@ background: -webkit-linear-gradient(top, #1e5799 0%,#46da62 0%,#3dc758 51%,#34a3
 background: linear-gradient(to bottom, #1e5799 0%,#46da62 0%,#3dc758 51%,#34a34b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#34a34b',GradientType=0 ); /* IE6-9 */
 
+}
+.left-menu li a{
+	color: #ff2626;
+	text-decoration: none;
+	font-size: 13px;
+	position: relative;
+	padding-left: 20px;
+	list-style: none;
+}
+.left-menu li a:before{
+	content: '\2014\0020';
+	position: absolute;
+	background: #ff2626;
+	height: 1px;
+	margin: auto;
+	margin-left: -15px;
+}
+.left-menu li a:nth-child(2n+1):before{
+	background: #fff;
 }
