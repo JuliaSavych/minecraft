@@ -12,7 +12,10 @@ html{
 body{
   min-height: 100%;
 }
-.wrapper {
+.wrapper1{
+	width: 100%;
+}
+.wrapper2 {
 	max-width: 960px;
 	margin: 0 auto;
 }
@@ -29,6 +32,9 @@ body{
 	content: '';
 	display: block;
 	clear:both;
+}
+.social__icon{
+	float: right;
 }
 
 .header__center{
@@ -47,7 +53,7 @@ body{
 .logo-2{
 	padding-top: 10px;
 }
-.contacts{
+.contact{
 	padding-top: 10px;
 	color: #37a14c;
 	font-size: 15px;
@@ -57,13 +63,16 @@ body{
 .contacts__name{
 	display: block;
 }
-.contacts a{
+.contacts__values{
 	vertical-align: middle;
 	display: block;
 	padding-left: 72px;
 }
 .skype i{
 	vertical-align: middle;
+}
+[href^="skype:"]{
+	background-image: url(icon/icon-skype.png);
 }
 
 [href^="tel:"]{
@@ -139,6 +148,9 @@ background: linear-gradient(to bottom, #1e5799 0%,#46da62 0%,#3dc758 51%,#34a34b
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#34a34b',GradientType=0 ); /* IE6-9 */
 
 }
+.left-menu{
+	list-style: none;
+}
 .left-menu h2{
 	font-size: 16px;
 }
@@ -196,7 +208,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#329545', end
 	color: black;
 	font-weight: bold;
 }
-.coprights{
+.wrapper3{
+	background: #fdc60c;
+}
+.header__bottom{
+	color: #fff;
+}
+
+.copyrights{
 	font-size: 16px;
 	float: left;
+	font-size: 15px;
+}
+.parthners{
+	background: #43b459;
+}
+.parthners img{
+	display: block;
+	padding: 11px;
+	width: 100%;
 }
