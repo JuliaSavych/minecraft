@@ -3,22 +3,18 @@
   padding:0;
   box-sizing:border-box;
 }
-img{
-  max-width: 100%;
-}
+
 html{
   height: 100%;
 }
 body{
   min-height: 100%;
 }
-.wrapper1 {
+.wrapper {
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 10px;
 }
 .header__top{
-	/*height: 45px;*/
 	background: #37a14c;
 	color: #fff;
 	padding: 10px;
@@ -33,8 +29,11 @@ body{
 }
 .social__icon{
 	float: right;
+	font-size: 0;
 }
-
+.social__icon a{
+	margin-right: 4px;
+}
 
 .logo-1, .logo-2{
   line-height: 115px;
@@ -68,7 +67,7 @@ body{
 	vertical-align: middle;
 }
 [href^="skype:"]{
-	background-image: url(icon/icon-skype.png);
+	background-image: url(icon/-skype.png);
 }
 
 [href^="tel:"]{
@@ -101,6 +100,7 @@ body{
 a {
 	text-decoration: none;
 }
+
 
 .menu li{
 	border-right:1px solid #247634;
@@ -173,6 +173,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 	background: #fff;
 
 }
+
 .content h1{
 	font-size: 20px;
 	font-weight: bold;
@@ -183,6 +184,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 	padding-bottom: 50px;
 }
 .news{
+
 	height: 265px;
 	text-align: center;
   	margin-bottom: 20px;
@@ -204,7 +206,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 	color: black;
 	font-weight: bold;
 }
-.wrapper2{
+.wrapper__bottom{
 	background: #fdc60c;
 	padding: 10px;
 }
