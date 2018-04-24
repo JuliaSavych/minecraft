@@ -160,6 +160,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 }
 .left-menu li{
 	list-style: none;
+	line-height: 30px;
 }
 
 .left-menu li a{
@@ -186,6 +187,73 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 .left-menu li ul a:nth-child(2n+1):before{
 	background: #fff;
 
+}
+.left-menu.active{
+	position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+  background: #fff;
+  overflow-y: scroll;
+  transition: .5s all ease;
+
+}
+.menu__opener{
+  position: fixed;
+  top: 75px;
+  left: 20px;
+  z-index: 1;
+  width: 100%;
+}
+.burger-icon{
+  background: #37a14c;
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 8px 0 15px;
+  cursor: pointer;
+  transition: .5s all ease;
+}
+.burger-icon span{
+  display: block;
+  background: #fff;
+  margin: 2px 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+  position: relative;
+  transition: .5s all ease;
+}
+.burger-icon span:before{
+  content: '';
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  top: 0;
+  left: -8px;
+  border-radius: 3px;
+  background: #fff;
+  transition: .5s all ease;
+}
+.burger-icon__opener span:nth-child(2){
+  opacity: 0;
+}
+.burger-icon__opener{
+  padding-left: 8px;
+}
+.burger-icon__opener span:nth-child(1){
+    transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+.burger-icon__opener span:nth-child(3){
+    transform: rotate(-45deg) translateX(6px) translateY(-6px);
+}
+.burger-icon__opener span:before{
+  left: 0;
 }
 
 .content h1{
