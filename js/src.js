@@ -18,3 +18,13 @@ hammertime.on('panleft panright', function(ev) {
     $('.left-menu').removeClass('active');
   }
 });
+
+var clik_menu = $('.left-menu_active');
+var open_menu = $('.left-menu li ul');
+    $(clik_menu).on('click', function(e) {
+        e.preventDefault();
+        open_menu.slideToggle();
+$( open_menu).click(function( event ) {
+     event.stopPropagation();
+});    
+    });
