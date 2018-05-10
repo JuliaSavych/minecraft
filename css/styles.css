@@ -190,6 +190,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48d962', end
   /*overflow-y: scroll;*/
   transition: .5s all ease;
       margin: 30px 0;
+      z-index: 2;
 
 }
 .left-menu > li {
@@ -245,7 +246,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48d962', end
   top: 75px;
   right: 20px;
   z-index: 1;
-  width: 100%;
 }
 .burger-icon{
   float: right;
@@ -312,6 +312,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48d962', end
 	border-bottom: 1px solid #e7e7e7;
 	margin-bottom: 55px;
 }
+.main-slider__arrows-holder{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+
+}
+.main-slider__arrows-holder svg{
+	width: 40px;
+	height: 40px;
+	align-items: center;
+	fill: #37a14c;
+	cursor: pointer;
+	transition: fill ease .5s;
+}
+
+.main_slider__arrows-holder svg:hover{
+	fill: #fdd108;
+}
 .news{
 	text-align: center;
   	margin-bottom: 20px;
@@ -329,8 +347,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48d962', end
 	padding: 5px
 }	
 
-.date{
-	padding-top: 11px;
+.date{;
 	color: black;
 	font-weight: bold;
 }
@@ -353,6 +370,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48d962', end
 .contacts_bottom{
 	color: #333;
 	display: table;
+}
+.pull-right{
+	float: right;
 }
 
 .parthners{
@@ -381,16 +401,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45ba5a', end
   padding: 0 10px;
 
 }
+.fantom {
+	display: none;
+}
 @media (min-width: 461px){
 	.col-logo-1{
 		float: left;
 		width: 38%;
 	}
-	/*.col-contacts_clear-fix:after{
-		content: '';
-	  display: block;
-	  clear: both;
-	}*/
+	.fantom {
+		display: block;
+	}
 	.col-contacts{
 		float: left;
 		width: 62%;
@@ -407,8 +428,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45ba5a', end
 		float: left;
 		width: 50%;
 	}
+	.col-news{
+		display: block;
+		float: left;
+		width: 50%;
+	}
+
 }
 @media (min-width: 768px){
+
+	.fantom{
+		display: none;
+	}
 	.left-menu{
 	position: static;
     width: 100%;
@@ -421,9 +452,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45ba5a', end
   .news{
   	text-align: left;
   }
-  	.pull-right{
-  		float: right;
-  	}
 
   .col-desktop-1-2{
   	float: left;
