@@ -32,13 +32,13 @@ body{
 	padding-top: 4px;
 }
 
-.social-icon{
+.social-icons{
 	float: right;
 	font-size: 0;
-	margin-left: 5px;
+	display: inline-block;
 }
-.social-icon a{
-	margin-right: 6px;
+.social-icons a{
+	margin-left: 5px;
 }
 
 .logo-1, .logo-2{
@@ -52,7 +52,7 @@ body{
   vertical-align: middle;
   width: 100%;
 }
-.contact{
+.contacts{
 	color: #37a14c;
 	font-size: 15px;
 	/*padding-bottom: 10px;*/
@@ -207,7 +207,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48d962', end
 	display: block;
 }
 .left-menu li > ul{
-	display: none;
 	line-height: 25px;
 }
 .left-menu li > ul a{
@@ -218,6 +217,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48d962', end
 	margin-left: 40px;
 	list-style: none;
 }
+
 .left-menu li > ul a:before{
 	content: '-';
 	position: absolute;
@@ -313,9 +313,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48d962', end
 	margin-bottom: 55px;
 }
 .news{
-	/*text-align: center;*/
+	text-align: center;
   	margin-bottom: 20px;
   	text-decoration: none;
+  	display: block;
 }
 .news__text{
 	height: 92px;
@@ -349,7 +350,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48d962', end
 	padding: 10px 0;
 	float: left;
 }
-.contact_bottom{
+.contacts_bottom{
 	color: #333;
 	display: table;
 }
@@ -385,6 +386,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45ba5a', end
 		float: left;
 		width: 38%;
 	}
+	/*.col-contacts_clear-fix:after{
+		content: '';
+	  display: block;
+	  clear: both;
+	}*/
 	.col-contacts{
 		float: left;
 		width: 62%;
@@ -411,6 +417,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45ba5a', end
 	}
     .menu__opener{ 
     display: none;
+  }
+  .news{
+  	text-align: left;
   }
   	.pull-right{
   		float: right;
