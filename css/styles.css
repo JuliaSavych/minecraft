@@ -160,7 +160,7 @@ text-decoration: none;
 	display: flex;
 	align-items: center;
 }
-.menu > li.active{
+.menu > li:hover{
 	background: #48d962; /* Old browsers */
 background: -moz-linear-gradient(top, #48d962 1%, #40c758 50%, #2e9e44 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, #48d962 1%,#40c758 50%,#2e9e44 100%); /* Chrome10-25,Safari5.1-6 */
@@ -248,6 +248,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48d962', end
   z-index: 1;
 }
 .burger-icon{
+  z-index: 3;
   float: right;
   background: #37a14c;
   height: 40px;
